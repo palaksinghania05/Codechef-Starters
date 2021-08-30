@@ -1,4 +1,4 @@
-package august;
+package august.starterA;
 
 import java.util.Scanner;
 
