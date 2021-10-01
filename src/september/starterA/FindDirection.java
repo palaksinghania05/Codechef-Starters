@@ -1,4 +1,4 @@
-package september;
+package september.starterA;
 
 import java.util.Scanner;
 
