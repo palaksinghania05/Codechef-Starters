@@ -4,20 +4,23 @@
  * Date: 02-11-2022
  */
 
-package y2022.november.starter64;
+package y2022.november.starter63;
 
 import java.util.Scanner;
 
-public class AvoidSquaresPlease {
+public class PackingBooks {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
         while (T>0){
-            int N = sc.nextInt();
-            for (int i = 1; i <= N; i++) {
-                System.out.print(i + " ");
+            int X = sc.nextInt();
+            int Y = sc.nextInt();
+            int Z = sc.nextInt();
+            if(Y%Z==0){
+                System.out.println(X * (Y/Z));
+            } else {
+                System.out.println(X * ((Y/Z)+1));
             }
-            System.out.println();
             T--;
         }
     }

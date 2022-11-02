@@ -4,23 +4,23 @@
  * Date: 02-11-2022
  */
 
-package y2022.november.starter64;
+package y2022.november.starter63;
 
 import java.util.Scanner;
 
-public class PackingBooks {
+public class TastyDecisions {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
         while (T>0){
             int X = sc.nextInt();
             int Y = sc.nextInt();
-            int Z = sc.nextInt();
-            if(Y%Z==0){
-                System.out.println(X * (Y/Z));
-            } else {
-                System.out.println(X * ((Y/Z)+1));
-            }
+            if(X*2>Y*5)
+                System.out.println("Chocolate");
+            else if(X*2<Y*5)
+                System.out.println("Candy");
+            else
+                System.out.println("Either");
             T--;
         }
     }
