@@ -24,8 +24,8 @@ public class BellsOfPilgrimage {
                     P = P + 20;
                 }
                 System.out.println(P);
-                T--;
             }
+            T--;
         }
     }
 }
