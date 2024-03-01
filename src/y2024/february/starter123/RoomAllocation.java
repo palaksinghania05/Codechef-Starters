@@ -9,12 +9,12 @@ public class RoomAllocation {
         while (T > 0) {
             int N = sc.nextInt();
             int[] A = new int[N];
-            int answer = 0;
+            int result = 0;
             for (int i = 0; i < N; i++) {
                 A[i] = sc.nextInt();
-                answer += (A[i] / 2) + (A[i] % 2);
+                result += (A[i] / 2) + (A[i] % 2);
             }
-            System.out.println(answer);
+            System.out.println(result);
             T--;
         }
     }
