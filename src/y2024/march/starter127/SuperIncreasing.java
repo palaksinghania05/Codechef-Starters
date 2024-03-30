@@ -10,13 +10,9 @@ public class SuperIncreasing {
             int N = sc.nextInt();
             int K = sc.nextInt();
             int X = sc.nextInt();
-            K--;
-            if (K >= 30) {
-                System.out.println("NO");
-                continue;
-            }
-            int minval = (int) Math.pow(2, K);
-            if (X >= minval) {
+            int temp = K - 1;
+            int result = (int) Math.pow(2, temp);
+            if (X >= result) {
                 System.out.println("YES");
             } else {
                 System.out.println("NO");
