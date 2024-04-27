@@ -5,24 +5,22 @@ import java.util.Scanner;
 public class GottaCatchThemAll {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        sc.nextInt();
-        while (sc.hasNextInt()) {
-            int n = sc.nextInt();
-            int a = sc.nextInt();
-            int b = sc.nextInt();
-            int arr[] = new int[n];
-            int count1 = 0;
-            for (int i = 0; i < n; i++) {
+        int T = sc.nextInt();
+        while (T > 0) {
+            int N = sc.nextInt();
+            int X = sc.nextInt();
+            int Y = sc.nextInt();
+            int[] arr = new int[N];
+            int result = 0;
+            for (int i = 0; i < N; i++) {
                 arr[i] = sc.nextInt();
-                if (arr[i] * a < b)
-                    count1 = count1 + (arr[i] * a);
+                if (arr[i] * X < Y)
+                    result = result + (arr[i] * X);
                 else
-                    count1 += b;
-
-
+                    result += Y;
             }
-            System.out.println(count1);
-
+            System.out.println(result);
+            T--;
         }
     }
 }
