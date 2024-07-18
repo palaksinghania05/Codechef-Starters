@@ -7,6 +7,6 @@ public class InternationalJusticeDay {
         Scanner sc = new Scanner(System.in);
         int X = sc.nextInt();
         int Y = sc.nextInt();
-        System.out.println(X >= Y ? "yes" : "no");
+        System.out.println(X >= Y ? "YES" : "NO");
     }
 }
