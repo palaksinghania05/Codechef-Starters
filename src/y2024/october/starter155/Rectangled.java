@@ -5,26 +5,24 @@ import java.util.Scanner;
 public class Rectangled {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-        for (int i = 0; i < t; i++) {
-            int inkl = sc.nextInt();
-            if (inkl < 4) {
+        int T = sc.nextInt();
+        while (T > 0) {
+            int N = sc.nextInt();
+            if (N < 4) {
                 System.out.println(0);
-            } else if (inkl == 4) {
+            } else if (N == 4) {
                 System.out.println(1);
             } else {
-                if (inkl % 2 != 0) {
-                    inkl--;
+                if (N % 2 != 0) {
+                    N--;
                 }
-                inkl /= 2;
-                int l = 0;
-                int b = 0;
-                int ma = 0;
-                int ml = (inkl) / (2);
-                ml = ml / 1;
-                ma = ml * (inkl - ml);
-                System.out.println(ma);
+                N /= 2;
+                int temp1 = 0;
+                int temp2 = (N) / (2);
+                temp1 = temp2 * (N - temp2);
+                System.out.println(temp1);
             }
+            T--;
         }
     }
 }
