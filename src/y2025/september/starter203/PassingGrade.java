@@ -15,7 +15,8 @@ public class PassingGrade {
             int temp = M[0];
             int temp2 = 0;
             for (int i = 0; i < N; i++) {
-                if (M[i] >= temp) temp2++;
+                if (M[i] >= temp)
+                    temp2++;
             }
             System.out.println(temp2);
         }
