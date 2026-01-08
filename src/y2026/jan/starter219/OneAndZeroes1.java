@@ -1,4 +1,4 @@
-package y2026.starter219;
+package y2026.jan.starter219;
 
 import java.util.Scanner;
 
